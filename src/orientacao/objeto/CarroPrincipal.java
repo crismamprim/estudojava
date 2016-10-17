@@ -11,10 +11,10 @@ public class CarroPrincipal {
 		carro[0].fabricante = "FORD";
 		carro[0].modelo = "MUSTANG";
 		carro[0].anoFabricacao = 2016;
-		carro[0].numeroChassi = 01132005;
+		carro[0].setAnoFabricacao(2016);
 		
 		
-		System.out.println("Ano de fabricação " + carro[0].anoFabricacao);
+		System.out.println("Ano de fabricação " + carro[0].getAnoFabricacao());
 
 	}
 
