@@ -7,21 +7,27 @@ public class FolhaPagamentoPrincipal {
 	public static void main(String[] args) {
 		
 		double salarioLiquido;
+		double valeAlimentacao = 45.00;
+		double totalDescontos;
 	
 		FolhaPagamento folha = new FolhaPagamento();
-		DecimalFormat reais = new DecimalFormat("R$ ,##0.00");
+		DecimalFormat reais = new DecimalFormat(",##0.00");
 		
-	    double salarioBruto = folha.CalculaSalario(40, 10, 25.50, 15.50);
+	    double salarioBruto = folha.CalculaSalario(40, 0, 34.00, 0.0);
 	    
-	    System.out.println("Salario Bruto " + reais.format(salarioBruto));
+	    System.out.println("Salario Bruto ----------------------- " + reais.format(salarioBruto));
 		
 		double inss = folha.CalculaInss(salarioBruto);
 		
-		System.out.println("INSS " + reais.format(inss));
+		System.out.println("INSS --------------------------------   " + reais.format(inss));
 		
-		salarioLiquido = salarioBruto - inss;
+		salarioLiquido = salarioBruto - inss - valeAlimentacao;
+		totalDescontos = inss + valeAlimentacao;
 		
-		System.out.println("Salario Liquido " + reais.format(salarioLiquido));
+		System.out.println("Vale alimentação 20% CONF. PAT ------    " + reais.format(valeAlimentacao));
+		System.out.println("");
+		System.out.println("TOAL DE DESCONTOS -------------------   " + reais.format(totalDescontos));
+		System.out.println("SALARIO LIQUIDO --------------------- " + reais.format(salarioLiquido));
 
 	}
 
