@@ -13,7 +13,7 @@ public class FolhaPagamentoPrincipal {
 		FolhaPagamento folha = new FolhaPagamento();
 		DecimalFormat reais = new DecimalFormat(",##0.00");
 		
-	    double salarioBruto = folha.CalculaSalario(40, 0, 34.00, 0.0);
+	    double salarioBruto = folha.CalculaSalario(40, 0, 180.00, 0.0);
 	    
 	    System.out.println("Salario Bruto ----------------------- " + reais.format(salarioBruto));
 		
