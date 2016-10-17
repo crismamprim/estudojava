@@ -15,8 +15,10 @@ public class FolhaPagamento {
 	
 	double CalculaInss(double salarioBruto){
 		if (salarioBruto <= 1556.94) {
-		   
-			salarioLiquido = (salarioBruto * 8) / 100;
+				salarioLiquido = (salarioBruto * 8) / 100;
+		
+		}else if (salarioBruto >= 1556.95 && salarioBruto <= 2594.92){
+					salarioLiquido = (salarioBruto * 9) / 100;
 		}
 		
 		return salarioLiquido;
