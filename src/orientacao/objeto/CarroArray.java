@@ -1,6 +1,6 @@
 package orientacao.objeto;
 
-public class Carro {
+public class CarroArray {
 	
 	String modelo;
 	String fabricante;

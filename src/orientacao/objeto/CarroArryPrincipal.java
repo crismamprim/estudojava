@@ -1,12 +1,12 @@
 package orientacao.objeto;
 
-public class CarroPrincipal {
+public class CarroArryPrincipal {
 
 	public static void main(String[] args) {
 		
-		Carro[] carro = new Carro[4]; // instanciar classe
+		CarroArray[] carro = new CarroArray[4]; // instanciar classe
 		
-		carro[0] = new Carro();
+		carro[0] = new CarroArray();
 		
 		carro[0].fabricante = "FORD";
 		carro[0].modelo = "MUSTANG";
